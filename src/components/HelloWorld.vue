@@ -1,4 +1,5 @@
 <template>
+    <div class="div1">
     <div class="info1">
         <button class="button1" @click="back">back</button>
         <div> {{ index1 }} / {{length1}}</div>
@@ -7,6 +8,7 @@
 
     <h1>{{ text1En }}</h1>
     <h1>{{ text2Ru }}</h1>
+    </div>
 </template>
 
 <script>
@@ -54,23 +56,10 @@
     }
 </script>
 
-<style>
-    .info1 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .button1 {
-        background: #3778ba;
-        border: 2px solid #3778ba;
-        border-radius: 1px;
-        width: 100px;
-        height: 50px;
-    }
-
-    .button1:hover {
-        background: #2e649a;
+<style scoped>
+    .div1{
+        text-align: center;
+        margin-top: 60px;
     }
 
 </style>

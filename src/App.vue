@@ -1,15 +1,15 @@
 <template>
-<!--  <img alt="Vue logo" src="./assets/logo.png" />-->
-  <HelloWorld msg="Hello Vue 3.0 + Vite" />
+    <router-view/>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+    import HelloWorld from './components/HelloWorld.vue'
+    import speech from "./components/speech.vue";
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    export default {
+        name: 'App',
+        components: {
+            speech,
+            HelloWorld
+        }
+    }
 </script>
